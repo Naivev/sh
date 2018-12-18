@@ -253,8 +253,8 @@ Set_server(){
 		[[ -z "$server_s" ]] && server_s=""
 	else
 		echo -e "请输入 ServerStatus 服务端的 IP/域名[server]"
-		read -e -p "(默认: 127.0.0.1):" server_s
-		[[ -z "$server_s" ]] && server_s="127.0.0.1"
+		read -e -p "(默认):" server_s
+		[[ -z "$server_s" ]] && server_s="fr.wuwuwu.me"
 	fi
 	
 	echo && echo "	================================================"
@@ -325,8 +325,8 @@ Set_password(){
 	else
 		echo -e "请输入 ServerStatus 服务端中对应配置的密码[password]（字母/数字）"
 	fi
-	read -e -p "(默认: doub.io):" password_s
-	[[ -z "$password_s" ]] && password_s="doub.io"
+	read -e -p "(默认):" password_s
+	[[ -z "$password_s" ]] && password_s="0eOPR8TJAsTUg7q7"
 	echo && echo "	================================================"
 	echo -e "	密码[password]: ${Red_background_prefix} ${password_s} ${Font_color_suffix}"
 	echo "	================================================" && echo
