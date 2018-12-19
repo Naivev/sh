@@ -254,7 +254,7 @@ Set_server(){
 	else
 		echo -e "请输入 ServerStatus 服务端的 IP/域名[server]"
 		read -e -p "(默认):" server_s
-		[[ -z "$server_s" ]] && server_s="213.32.9.148"
+		[[ -z "$server_s" ]] && server_s="127.0.0.1"
 	fi
 	
 	echo && echo "	================================================"
